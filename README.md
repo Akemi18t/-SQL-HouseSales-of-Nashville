@@ -108,7 +108,7 @@ SET SoldAsVacant = CASE WHEN SoldAsVacant = 'Y' THEN 'YES'
 	   END
 ```
 
-### 5. Removing Duplicates
+### 5. Removing Duplicates and NULL Values
 ```sql
 WITH RowNumCTE AS(
 SELECT *,
@@ -159,16 +159,38 @@ DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
 ALTER TABLE PorfolioProject.dbo.NashvilleHousing
 DROP COLUMN SaleDate
 
+SELECT *
+FROM PorfolioProject.dbo.NashvilleHousing
+WHERE OwnerName IS NOT NULL
+  AND Acreage IS NOT NULL
+  AND LandValue IS NOT NULL
+  AND BuildingValue IS NOT NULL
+  AND TotalValue IS NOT NULL
+  AND YearBuilt IS NOT NULL
+  AND Bedrooms IS NOT NULL
+  AND FullBath IS NOT NULL
+  AND HalfBath IS NOT NULL
+  AND OwnerSplitAddress IS NOT NULL
+  AND OwnerSplitCity IS NOT NULL
+  AND OwnerSplitState IS NOT NULL
+
 ```
-# Conclution
+# Conclution (Visualization Graph is Provided in my Tableau Account)
+[Link to My Tableau Visualization](https://public.tableau.com/app/profile/akemi.taira.vasquez/viz/HouseSalesofNashville2013-2019/Dashboard1?publish=yes)
 
-2. ***Skills for Top-Paying Jobs**:
 
-3. ***Most In-Demand Skills**:
+***Yearly Peak Sales in the Housing Market (2013-2019)**:
+The analysis of Yearly Peak Sales in the House Market (2013-2019) reveals significant trends and economic influences. In 2016, the market peaked at an average sales price of $304,139, possibly buoyed by improved economic conditions under President Obama's administration and policies like the Dodd-Frank Act aimed at housing affordability and recovery. Conversely, 2013 had the second-highest average sales price at $246,343, reflecting recovery post-2008 financial crisis with stricter lending practices and economic uncertainty.
 
-4. ***Skills with Higher Salaries**:
 
-5. ***Optimal Skills for Job Market Values**:
+***Average Sales Price by Year Built**:
+The analysis of Average Sales Price by Year Built in Nashville (2013-2019) shows significant shifts in housing preferences. Starting in the 2000s, there was a notable rise in newly constructed homes, likely driven by Nashville's rapid growth and demographic changes. Despite this trend, houses built in the 1830s recorded the highest average sales, suggesting enduring appeal due to historical or architectural significance. These insights inform real estate strategies, balancing the allure of historical properties with modern constructions.
+
+***Average Sales Price by Number of Bedrooms**:
+
+***Most Popular Types of Properties Sold**:
+
+**Property Sold as Vacant(YES/NO)**:
 
 
 [Link to My Tableau Visualization](https://public.tableau.com/app/profile/akemi.taira.vasquez/viz/HouseSalesofNashville2013-2019/Dashboard1?publish=yes)
