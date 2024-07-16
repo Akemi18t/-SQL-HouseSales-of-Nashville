@@ -2,7 +2,7 @@
 This project outlines the process of cleaning data from a CSV file
 
 # Introduction
-
+In this project, we examine key trends and economic influences in the Nashville housing market, revealing significant changes in buyer preferences and property dynamics during that period. Several dimensions are considered in the analysis, including peak sales years, trends by construction year, bedroom configurations, popular property types, and the effect of vacant properties on sales prices.
 
 # Tools Used 
 In my thorough exploration of house sales of Nashville, I utilized a range of essential tools:
@@ -187,10 +187,14 @@ The analysis of Yearly Peak Sales in the House Market (2013-2019) reveals signif
 The analysis of Average Sales Price by Year Built in Nashville (2013-2019) shows significant shifts in housing preferences. Starting in the 2000s, there was a notable rise in newly constructed homes, likely driven by Nashville's rapid growth and demographic changes. Despite this trend, houses built in the 1830s recorded the highest average sales, suggesting enduring appeal due to historical or architectural significance. These insights inform real estate strategies, balancing the allure of historical properties with modern constructions.
 
 ***Average Sales Price by Number of Bedrooms**:
+The analysis of Average Sales Price by Number of Bedrooms reveals a clear trend where higher room numbers correlate with increased prices, reflecting larger and more expensive properties. 
 
 ***Most Popular Types of Properties Sold**:
+The Most Popular Types of Properties Sold highlight that single-family homes and daycare facilities were the most purchased property types in Nashville.
+This trend may indicate a growing population in the area, driving demand for residential and childcare facilities. 
 
-**Property Sold as Vacant(YES/NO)**:
+**Property Sold as Vacant in Nashville(YES/NO)**:
+The average price of a vacant home differs by $189,822, while a non-vacant home sells for $308,597 on average. In light of the disparity, it suggests that vacant status could influence property values, possibly reflecting market conditions or buyer perceptions. Investigating the factors behind this pricing difference could provide valuable insights for real estate decision-making and investing.
 
 
 [Link to My Tableau Visualization](https://public.tableau.com/app/profile/akemi.taira.vasquez/viz/HouseSalesofNashville2013-2019/Dashboard1?publish=yes)
