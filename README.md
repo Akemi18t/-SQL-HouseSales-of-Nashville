@@ -171,6 +171,6 @@ DROP COLUMN SaleDate
 5. ***Optimal Skills for Job Market Values**:
 
 
-[Link to My Tableau Visualization](https://public.tableau.com/app/profile/akemi.taira.vasquez/viz/OptimalandIn-DemandSkillsforDataAnalystsTopPayingPositionsbyCompanyandHighestSalariesintheU_S_2023/Dashboard1)
+[Link to My Tableau Visualization](https://public.tableau.com/app/profile/akemi.taira.vasquez/viz/HouseSalesofNashville2013-2019/Dashboard1?publish=yes)
 
 Thank You!
